@@ -1,0 +1,109 @@
+.title {
+    font-family: 'Press Start 2P';
+    font-size: 40px;
+    color: azure;
+}
+
+body {
+    font-family: 'Press Start 2P';
+    font-size: 12px;
+    background: #1E1E1E
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;  /* text */
+  }
+
+.text {
+    color:azure;
+    font-size: 22px;
+    text-align: center;
+}
+
+.load {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Initially hidden */
+    color: azure;
+}
+  
+@keyframes toggleVisibility {
+    0% { display: none; }
+    50% { display: block; }
+    100% { display: none; }
+}
+
+.load.visible {
+    display: block !important;
+    animation: toggleVisibility 1s infinite;
+}
+
+button.load {
+    font-family: 'Press Start 2P';
+    font-size: 12px;
+    background-color: #1e1e1e;
+    color: azure;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container button.Space_Invaders {
+    background-image: url("/static/img/space_invaders.png"); 
+}
+
+.button-container button.Retro_Snake {
+    background-image: url("/static/img/snake.jpg"); 
+    background-size: cover; 
+}
+
+.button-container button.Tetris {
+    background-image: url("/static/img/tetris.jfif");
+}
+.button-container button.Pac_Man {
+    background-image: url("/static/img/pacman.png");
+    background-size: cover; 
+}
+  
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+.button-container button {
+    flex: 1;
+    margin-right: 30px; /* Adjust the spacing as desired */
+    border-radius: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+  }
+
+.button-container button:last-child {
+    margin-right: 0; /* Remove right margin for the last button */
+}
+
+
+/* From games to last page */
+button.Back_Button {
+    font-family: 'Press Start 2P';
+    font-size: 20px;
+    color: azure;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: 10%;
+    left: 90%;
+
+}
+
+

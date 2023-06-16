@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <button class="load" onclick="window.location.href='/home'">Click to Insert Coin</button>
+
+    <script>
+        // code so that the text is shown and not shown
+        setInterval(function() {
+            const loadElement = document.querySelector('.load');
+            loadElement.classList.toggle('visible');
+        }, 800); // 1000 milliseconds = 1 second
+    </script>
+{% endblock %}
